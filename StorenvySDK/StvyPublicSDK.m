@@ -22,15 +22,15 @@
 
 }
 
-+ (id)sharedInstance {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        if (_sharedInstance == nil) {
-            _sharedInstance = [[self alloc] init];
-        }
-    });
-    return _sharedInstance;
-}
+//+ (id)sharedInstance {
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        if (_sharedInstance == nil) {
+//            _sharedInstance = [[self alloc] init];
+//        }
+//    });
+//    return _sharedInstance;
+//}
 
 - (id)init {
     return [self initWithStoreName:@"lovejunkee"];

@@ -20,8 +20,6 @@
 
 //#import "StvyEntities.h"
 
-@class StvySDK;
-static StvySDK *_sharedInstance;
 
 @interface StvySDK : NSObject
 {

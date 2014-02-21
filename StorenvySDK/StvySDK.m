@@ -8,7 +8,7 @@
 
 #import "StvySDK.h"
 
-static StvySDK *_sharedInstance = nil;
+
 
 @interface StvySDK (Protected)
 
@@ -20,7 +20,7 @@ static StvySDK *_sharedInstance = nil;
 @implementation StvySDK
 
 
-
+static StvySDK *_sharedInstance = nil;
 
 
 - (id)init {
@@ -29,7 +29,6 @@ static StvySDK *_sharedInstance = nil;
 
 - (void)dealloc
 {
-    [super dealloc];
     NSLog(@"deallocaing?? ");
 }
 

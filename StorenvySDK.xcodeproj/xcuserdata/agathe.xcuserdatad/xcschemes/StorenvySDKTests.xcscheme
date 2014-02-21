@@ -37,23 +37,6 @@
                BlueprintName = "StorenvySDKTests"
                ReferencedContainer = "container:StorenvySDK.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "StvyAPIPublicCollectionsTest">
-               </Test>
-               <Test
-                  Identifier = "StvyAPIPublicProductsTest">
-               </Test>
-               <Test
-                  Identifier = "StvyAPIPublicStoreTest">
-               </Test>
-               <Test
-                  Identifier = "StvyPublicAPITest">
-               </Test>
-               <Test
-                  Identifier = "StvyTest">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
