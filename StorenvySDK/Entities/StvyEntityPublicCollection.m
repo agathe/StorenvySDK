@@ -5,6 +5,7 @@
 
 #import "StvyEntityPublicCollection.h"
 #import "StvyEntityPublicProduct.h"
+#import "StvyAPI.h"
 
 
 @implementation StvyEntityPublicCollection {
@@ -21,9 +22,14 @@
             @"description":                    @"description",
             @"primary":                        @"primary",
             @"hide_in_storefront_navigation":  @"hideInStorefrontNavigation",
-            @"photo":                          @"photoUrl",
+//            @"photo":                          @"photoUrl",
             @"products":                       @"productIDs",
     }];
+
+    RKAttributeMapping *titleMapping = [RKAttributeMapping attributeMappingFromKeyPath:@"photo" toKeyPath:@"photoUrl"];
+    titleMapping.valueTransformer = [StvyAPI urlPrefixValueTransformer];
+    [mapping addAttributeMappingsFromArray:@[titleMapping]];
+
 
     RKRelationshipMapping *relationshipMapping = nil;
 

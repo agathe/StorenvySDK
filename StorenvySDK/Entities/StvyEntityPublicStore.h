@@ -33,6 +33,6 @@
 @property (nonatomic, copy) NSURL* avatarUrl;
 @property (nonatomic, copy) NSString* marketplaceUrl;
 
-+ (RKEntityMapping *)mapping;
++ (RKObjectMapping *)mapping;
 
 @end

@@ -4,13 +4,14 @@
 //
 
 #import "StvyEntityPublicStore.h"
+#import "StvyAPI.h"
 
 
 @implementation StvyEntityPublicStore {
 
 }
 
-+ (RKEntityMapping *)mapping
++ (RKObjectMapping *)mapping
 {
     RKObjectMapping *mapping = [RKObjectMapping mappingForClass:self];
 
@@ -21,8 +22,13 @@
             @"url":                            @"url",
             @"marketplace_url":                @"marketplaceUrl",
             @"location":                       @"location",
-            @"avatar":                         @"avatarUrl",
+//            @"avatar":                         @"avatarUrl",
     }];
+
+
+    RKAttributeMapping *titleMapping = [RKAttributeMapping attributeMappingFromKeyPath:@"avatar" toKeyPath:@"avatarUrl"];
+    titleMapping.valueTransformer = [StvyAPI urlPrefixValueTransformer];
+    [mapping addAttributeMappingsFromArray:@[titleMapping]];
 
     return mapping;
 }

@@ -31,20 +31,20 @@
 
 @interface StvyEntityPhoto : NSObject
 
-@property (nonatomic, copy) NSString * homepage;
-@property (nonatomic, copy) NSString * small;
-@property (nonatomic, copy) NSString * medium;
-@property (nonatomic, copy) NSString * large;
-@property (nonatomic, copy) NSString * original;
-@property (nonatomic, copy) NSString * w64;
-@property (nonatomic, copy) NSString * w200;
-@property (nonatomic, copy) NSString * w400;
-@property (nonatomic, copy) NSString * w1000;
-@property (nonatomic, copy) NSString * sq64;
-@property (nonatomic, copy) NSString * sq200;
-@property (nonatomic, copy) NSString * sq400;
+@property (nonatomic, copy) NSURL * homepage;
+@property (nonatomic, copy) NSURL * small;
+@property (nonatomic, copy) NSURL * medium;
+@property (nonatomic, copy) NSURL * large;
+@property (nonatomic, copy) NSURL * original;
+@property (nonatomic, copy) NSURL * w64;
+@property (nonatomic, copy) NSURL * w200;
+@property (nonatomic, copy) NSURL * w400;
+@property (nonatomic, copy) NSURL * w1000;
+@property (nonatomic, copy) NSURL * sq64;
+@property (nonatomic, copy) NSURL * sq200;
+@property (nonatomic, copy) NSURL * sq400;
 
 
-+ (RKEntityMapping *)mapping;
++ (RKObjectMapping *)mapping;
 
 @end

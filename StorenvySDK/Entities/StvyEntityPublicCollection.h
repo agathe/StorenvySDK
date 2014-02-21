@@ -31,7 +31,7 @@
 @property (nonatomic, copy) NSString* description;
 @property (nonatomic, assign) BOOL primary;
 @property (nonatomic, assign) BOOL hideInStorefrontNavigation;
-@property (nonatomic, copy) NSString* photoUrl;
+@property (nonatomic, copy) NSURL* photoUrl;
 
 @property (nonatomic, strong) NSOrderedSet* productIDs;
 @property (nonatomic, strong) NSOrderedSet* products;

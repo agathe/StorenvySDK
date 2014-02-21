@@ -35,5 +35,6 @@
 - (RACSignal *)putRequestAtPath:(NSString *)path parameters:(NSDictionary *)parameters;
 - (void)withLimit:(int)limit andTotal:(int)total callBlock:(void (^)(int offset))block;
 
++ (RKValueTransformer *)urlPrefixValueTransformer;
 
 @end

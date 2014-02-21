@@ -4,18 +4,22 @@
 //
 
 #import "StvyEntityPhoto.h"
+#import "StvyAPI.h"
 
 
 @implementation StvyEntityPhoto {
 
 }
 
-+ (RKEntityMapping *)mapping
++ (RKObjectMapping *)mapping
 {
     RKObjectMapping *mapping = [RKObjectMapping mappingForClass:self];
 
 
-    [mapping addAttributeMappingsFromDictionary:@{
+//    [mapping addAttributeMappingsFromDictionary:@{
+//    }];
+
+    NSDictionary * atts = @{
             @"photo.homepage":                        @"homepage",
             @"photo.small":                           @"small",
             @"photo.medium":                          @"medium",
@@ -28,7 +32,18 @@
             @"photo.64sq":                            @"sq64",
             @"photo.200sq":                           @"sq200",
             @"photo.400sq":                           @"sq400",
+    };
+    [atts enumerateKeysAndObjectsUsingBlock:^(NSString* key, NSString* obj, BOOL *stop) {
+        RKAttributeMapping *urlMapping = [RKAttributeMapping attributeMappingFromKeyPath:key toKeyPath:obj];
+        urlMapping.valueTransformer = [StvyAPI urlPrefixValueTransformer];
+        [mapping addAttributeMappingsFromArray:@[urlMapping]];
     }];
+
+//    titleMapping.valueTransformer = [StvyAPI urlPrefixValueTransformer];
+
+
+//    [mapping addAttributeMappingsFromArray:@[titleMapping, titleMapping2]];
+
 
     return mapping;
 }
