@@ -95,6 +95,7 @@
 		316521FA18B5FC7200127C90 /* StvyAPIPublicStoreTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyAPIPublicStoreTest.m; sourceTree = "<group>"; };
 		316521FE18B6101D00127C90 /* StvyAPIPublicCollectionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyAPIPublicCollectionsTest.m; sourceTree = "<group>"; };
 		31DD95FF18B732130073F59C /* StvySDKLoadingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvySDKLoadingTest.m; sourceTree = "<group>"; };
+		31DD960118B782900073F59C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		31FE4A6018B44B1E0099D17F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		31FE4A6218B44B250099D17F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		31FE4A6418B44B2A0099D17F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -330,6 +331,7 @@
 		AB5F69A9F8A93A7072D77145 = {
 			isa = PBXGroup;
 			children = (
+				31DD960118B782900073F59C /* README.md */,
 				AB5F61E4B5695D20BBCA689F /* Products */,
 				AB5F6200D174745365847655 /* Frameworks */,
 				AB5F627FCDEAD5C0FA24C001 /* StorenvySDK */,
