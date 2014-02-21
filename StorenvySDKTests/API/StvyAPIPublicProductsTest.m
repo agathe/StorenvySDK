@@ -45,7 +45,7 @@
     expect(product.photos.count).to.beGreaterThanOrEqualTo(1);
     StvyEntityPhoto *photo = [[product.photos allObjects] firstObject];
     expect(photo).to.beInstanceOf(StvyEntityPhoto.class);
-    expect(photo.homepage.length).to.beGreaterThanOrEqualTo(10);
+    expect(photo.homepage.path.length).to.beGreaterThanOrEqualTo(10);
 }
 
 @end
