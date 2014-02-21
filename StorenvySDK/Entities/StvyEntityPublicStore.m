@@ -1,0 +1,34 @@
+//
+// Created by Agathe Battestini on 2/19/14.
+// Copyright (c) 2014 Storenvy. All rights reserved.
+//
+
+#import "StvyEntityPublicStore.h"
+
+
+@implementation StvyEntityPublicStore {
+
+}
+
++ (RKEntityMapping *)mapping
+{
+    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:self];
+
+    [mapping addAttributeMappingsFromDictionary:@{
+            @"id":                             @"storeID",
+            @"name":                           @"name",
+            @"subdomain":                      @"subdomain",
+            @"url":                            @"url",
+            @"marketplace_url":                @"marketplaceUrl",
+            @"location":                       @"location",
+            @"avatar":                         @"avatarUrl",
+    }];
+
+    return mapping;
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"<%@:%p name:%@ >", NSStringFromClass([self class]), self, self.name];
+}
+
+@end

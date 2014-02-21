@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		316521E718B5FB8B00127C90 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE4A7018B5DFE90099D17F /* SenTestingKit.framework */; };
+		316521E818B5FB8B00127C90 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE4A6218B44B250099D17F /* SystemConfiguration.framework */; };
+		316521E918B5FB8B00127C90 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE4A6018B44B1E0099D17F /* MobileCoreServices.framework */; };
+		316521EA18B5FB8B00127C90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F6AD9B176C52162304BBA /* Foundation.framework */; };
+		316521EB18B5FB8B00127C90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F6BE336B4573ED1B03229 /* UIKit.framework */; };
+		316521EC18B5FB8B00127C90 /* libStorenvySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F63CF6596A02E6F730C1D /* libStorenvySDK.a */; };
+		316521ED18B5FB8B00127C90 /* libPods-StorenvySDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80905420EB52426BBB379ADD /* libPods-StorenvySDKTests.a */; };
+		316521EF18B5FB8B00127C90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB5F6EA44C09EA7B179C6EDA /* InfoPlist.strings */; };
+		316521F718B5FBEE00127C90 /* StvyPublicSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F6CA09D6215487CE02E80 /* StvyPublicSDKTests.m */; };
+		316521F818B5FC1500127C90 /* StvyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F6830A6F08F95E68DB030 /* StvyTest.m */; };
+		316521F918B5FC1A00127C90 /* StvyPublicAPITest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F64E869857E6488921126 /* StvyPublicAPITest.m */; };
+		316521FB18B5FC7200127C90 /* StvyAPIPublicStoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 316521FA18B5FC7200127C90 /* StvyAPIPublicStoreTest.m */; };
+		316521FF18B6101D00127C90 /* StvyAPIPublicCollectionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 316521FE18B6101D00127C90 /* StvyAPIPublicCollectionsTest.m */; };
+		31DD960018B732130073F59C /* StvySDKLoadingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DD95FF18B732130073F59C /* StvySDKLoadingTest.m */; };
+		31FE4A6118B44B1E0099D17F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE4A6018B44B1E0099D17F /* MobileCoreServices.framework */; };
+		31FE4A6318B44B250099D17F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE4A6218B44B250099D17F /* SystemConfiguration.framework */; };
+		31FE4A6518B44B2A0099D17F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE4A6418B44B2A0099D17F /* Security.framework */; };
+		31FE4A6718B44B6C0099D17F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE4A6618B44B6C0099D17F /* CFNetwork.framework */; };
+		31FE4A6818B44B770099D17F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F6BE336B4573ED1B03229 /* UIKit.framework */; };
+		31FE4A6A18B44B7F0099D17F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE4A6918B44B7F0099D17F /* CoreData.framework */; };
+		31FE4A6D18B542BD0099D17F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE4A6018B44B1E0099D17F /* MobileCoreServices.framework */; };
+		31FE4A6E18B542C70099D17F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE4A6218B44B250099D17F /* SystemConfiguration.framework */; };
+		31FE4A7118B5DFE90099D17F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE4A7018B5DFE90099D17F /* SenTestingKit.framework */; };
+		3B8B803090BA421180B778D5 /* libPods-StorenvySDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80905420EB52426BBB379ADD /* libPods-StorenvySDKTests.a */; };
+		7BE13B45EC4F4D538CC43E44 /* libPods-StorenvySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F35A8E348C4462AE066D46 /* libPods-StorenvySDK.a */; };
+		AB5F6198204469EA2B53A990 /* StvyObjectPublicCollections.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F68C3E4BF235E12C8230B /* StvyObjectPublicCollections.m */; };
+		AB5F61D1D4A16B7B1C088FD1 /* StvyHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F6113E169A5B50874E52C /* StvyHTTPClient.m */; };
+		AB5F6231E7CDBD3B53200D90 /* StvyAPI+Products.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F65C50AAF2C2A6323EB21 /* StvyAPI+Products.m */; };
+		AB5F6261DC1379BBC5D8AACE /* StvyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F667A3EF9CA8936FB7C41 /* StvyAPI.m */; };
+		AB5F6327386A802ADED8A696 /* StvyEntityPublicProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F66142E4707F709B0842B /* StvyEntityPublicProduct.m */; };
+		AB5F6582E8BB70222A433A27 /* StvyEntityPublicStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F6C08188CB5F9D99C5E81 /* StvyEntityPublicStore.m */; };
+		AB5F662B3DEF3140CB732574 /* StvyAPI+Collections.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F65BB1CD13AA178B042A5 /* StvyAPI+Collections.m */; };
+		AB5F66847CA4846BC9966F6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB5F6EA44C09EA7B179C6EDA /* InfoPlist.strings */; };
+		AB5F66B4C467BCD2F8AAF9CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F6AD9B176C52162304BBA /* Foundation.framework */; };
+		AB5F66E0BCC8B13729C2E85F /* SPDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F65ABD94276C7434A33C4 /* SPDeepCopy.m */; };
+		AB5F6833E2A9F8EC54853139 /* StvySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F629E06369C4EC84A030E /* StvySDK.m */; };
+		AB5F6AD76311870DC1D77484 /* StvyPublicSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F6B73D04DCC1497C5C65A /* StvyPublicSDK.m */; };
+		AB5F6BBCAC1F225BE4EB3FDD /* StvyAPIPublicProductsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F6DAC59D8AF3C9BC49298 /* StvyAPIPublicProductsTest.m */; };
+		AB5F6C4D1A7EDD7B1B46D55F /* libStorenvySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F63CF6596A02E6F730C1D /* libStorenvySDK.a */; };
+		AB5F6CEE0DFE4CBD7FA62A08 /* StvyAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F66481BED958D45E81FFC /* StvyAPIResponse.m */; };
+		AB5F6D8C6D063FE2DEA41727 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F6BE336B4573ED1B03229 /* UIKit.framework */; };
+		AB5F6DCD187AFD2455886090 /* StvyEntityPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F6628DCDEEC734D8453FD /* StvyEntityPhoto.m */; };
+		AB5F6DD29B2D768CE1C76614 /* StvyEntityPublicCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F68629D23238EF0095B02 /* StvyEntityPublicCollection.m */; };
+		AB5F6DF47E8993F28F3BFFFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F6AD9B176C52162304BBA /* Foundation.framework */; };
+		AB5F6EA07DC2178F0A542E8A /* StvyObjectPublicProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F6B6E5201C62705DACC24 /* StvyObjectPublicProducts.m */; };
+		AB5F6EA712C269BDF0BF3491 /* StvySession.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F602A4B58DCEB39B84879 /* StvySession.m */; };
+		AB5F6FB433DD209DA68E4032 /* StvyAPI+Store.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F6748D614553CC72FDAA8 /* StvyAPI+Store.m */; };
+		AB5F6FDA63017EC85D0562C6 /* StvyObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5F60F13D7B72427FC711E6 /* StvyObjectManager.m */; };
+		AB5F6FFD8DF23A22C934C246 /* StvySDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB5F65EC5C74A4689C9FF544 /* StvySDK.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		316521E218B5FB8B00127C90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB5F648993B63FE1119335A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB5F67430DF638DCE624E65A;
+			remoteInfo = StorenvySDK;
+		};
+		AB5F6F89B35D828FE4443D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB5F648993B63FE1119335A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB5F67430DF638DCE624E65A;
+			remoteInfo = StorenvySDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB5F63B1ED803BB15AF6BAFC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AB5F6FFD8DF23A22C934C246 /* StvySDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		316521DF18B5F83D00127C90 /* StorenvySDKTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "StorenvySDKTests copy-Info.plist"; path = "/Users/agathe/PROJECTS/20140218_Storenvy/StorenvySDK/StorenvySDKTests copy-Info.plist"; sourceTree = "<absolute>"; };
+		316521F418B5FB8B00127C90 /* StorenvySDKTests copy.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StorenvySDKTests copy.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		316521F518B5FB9500127C90 /* StorenvySDKTests copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "StorenvySDKTests copy2-Info.plist"; path = "/Users/agathe/PROJECTS/20140218_Storenvy/StorenvySDK/StorenvySDKTests copy2-Info.plist"; sourceTree = "<absolute>"; };
+		316521FA18B5FC7200127C90 /* StvyAPIPublicStoreTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyAPIPublicStoreTest.m; sourceTree = "<group>"; };
+		316521FE18B6101D00127C90 /* StvyAPIPublicCollectionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyAPIPublicCollectionsTest.m; sourceTree = "<group>"; };
+		31DD95FF18B732130073F59C /* StvySDKLoadingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvySDKLoadingTest.m; sourceTree = "<group>"; };
+		31FE4A6018B44B1E0099D17F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		31FE4A6218B44B250099D17F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		31FE4A6418B44B2A0099D17F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		31FE4A6618B44B6C0099D17F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		31FE4A6918B44B7F0099D17F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		31FE4A7018B5DFE90099D17F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		73F35A8E348C4462AE066D46 /* libPods-StorenvySDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StorenvySDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80905420EB52426BBB379ADD /* libPods-StorenvySDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StorenvySDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFFC65866004DA185755574 /* Pods-StorenvySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorenvySDK.xcconfig"; path = "Pods/Pods-StorenvySDK.xcconfig"; sourceTree = "<group>"; };
+		AB5F6011C6B5AE966DE55887 /* StvyEntityPublicCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyEntityPublicCollection.h; sourceTree = "<group>"; };
+		AB5F602A4B58DCEB39B84879 /* StvySession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvySession.m; sourceTree = "<group>"; };
+		AB5F60A9CEAB405D68C1A60D /* StvyAPIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyAPIResponse.h; sourceTree = "<group>"; };
+		AB5F60F13D7B72427FC711E6 /* StvyObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyObjectManager.m; sourceTree = "<group>"; };
+		AB5F6113E169A5B50874E52C /* StvyHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyHTTPClient.m; sourceTree = "<group>"; };
+		AB5F6163442CC43EC11193AC /* StvyObjectPublicProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyObjectPublicProducts.h; sourceTree = "<group>"; };
+		AB5F619DA3EE7711FABF2097 /* StvyEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyEntities.h; sourceTree = "<group>"; };
+		AB5F629E06369C4EC84A030E /* StvySDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StvySDK.m; sourceTree = "<group>"; };
+		AB5F63066BCE78C9771AAA01 /* StvyPublicAPITest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyPublicAPITest.h; sourceTree = "<group>"; };
+		AB5F63CF6596A02E6F730C1D /* libStorenvySDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStorenvySDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB5F63FFCABC82AB7FECED5D /* StvyPublicMappingTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyPublicMappingTest.h; sourceTree = "<group>"; };
+		AB5F64E869857E6488921126 /* StvyPublicAPITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyPublicAPITest.m; sourceTree = "<group>"; };
+		AB5F64F61B1FB8A858CA11A7 /* StvyObjectPublicCollections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyObjectPublicCollections.h; sourceTree = "<group>"; };
+		AB5F6548760923E2FFB0F908 /* StorenvySDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorenvySDK.h; sourceTree = "<group>"; };
+		AB5F65ABD94276C7434A33C4 /* SPDeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDeepCopy.m; sourceTree = "<group>"; };
+		AB5F65BB1CD13AA178B042A5 /* StvyAPI+Collections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StvyAPI+Collections.m"; sourceTree = "<group>"; };
+		AB5F65C50AAF2C2A6323EB21 /* StvyAPI+Products.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StvyAPI+Products.m"; sourceTree = "<group>"; };
+		AB5F65EC5C74A4689C9FF544 /* StvySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StvySDK.h; sourceTree = "<group>"; };
+		AB5F65F017C10F5C0CA2EB5C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AB5F66142E4707F709B0842B /* StvyEntityPublicProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyEntityPublicProduct.m; sourceTree = "<group>"; };
+		AB5F6628DCDEEC734D8453FD /* StvyEntityPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyEntityPhoto.m; sourceTree = "<group>"; };
+		AB5F6634665600A713A09FEA /* StvyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyTest.h; sourceTree = "<group>"; };
+		AB5F66481BED958D45E81FFC /* StvyAPIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyAPIResponse.m; sourceTree = "<group>"; };
+		AB5F667A3EF9CA8936FB7C41 /* StvyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyAPI.m; sourceTree = "<group>"; };
+		AB5F66A2890073C2FD5B8F6E /* StvyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyAPI.h; sourceTree = "<group>"; };
+		AB5F6705BF34BC20DB6C9430 /* StorenvySDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StorenvySDK-Prefix.pch"; sourceTree = "<group>"; };
+		AB5F6748D614553CC72FDAA8 /* StvyAPI+Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StvyAPI+Store.m"; sourceTree = "<group>"; };
+		AB5F680D6D319356B6463311 /* StvyEntityPublicProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyEntityPublicProduct.h; sourceTree = "<group>"; };
+		AB5F6830A6F08F95E68DB030 /* StvyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyTest.m; sourceTree = "<group>"; };
+		AB5F6833AF1AFADC6EAFC615 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB5F68629D23238EF0095B02 /* StvyEntityPublicCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyEntityPublicCollection.m; sourceTree = "<group>"; };
+		AB5F68916DF1FF71B0414261 /* StvyPublicMappingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyPublicMappingTest.m; sourceTree = "<group>"; };
+		AB5F68AE1F2F89E6E08F4EB9 /* StvySession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvySession.h; sourceTree = "<group>"; };
+		AB5F68C3E4BF235E12C8230B /* StvyObjectPublicCollections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyObjectPublicCollections.m; sourceTree = "<group>"; };
+		AB5F6987BDAE1566EADB46F7 /* StorenvySDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "StorenvySDKTests-Info.plist"; sourceTree = "<group>"; };
+		AB5F69AD9D3E10225417AB51 /* StvyAPI+Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StvyAPI+Store.h"; sourceTree = "<group>"; };
+		AB5F69AEDB3E9880E2B315B0 /* SPDeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDeepCopy.h; sourceTree = "<group>"; };
+		AB5F69C35696199504424866 /* StvyPublicSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyPublicSDK.h; sourceTree = "<group>"; };
+		AB5F69C79848866FFDFCBF67 /* StvyObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyObjectManager.h; sourceTree = "<group>"; };
+		AB5F6ABFB906DF59EB44E465 /* StvyHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyHTTPClient.h; sourceTree = "<group>"; };
+		AB5F6AD9B176C52162304BBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB5F6AE9324FCA99BF4A0892 /* StvyAPI+Products.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StvyAPI+Products.h"; sourceTree = "<group>"; };
+		AB5F6B6E5201C62705DACC24 /* StvyObjectPublicProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyObjectPublicProducts.m; sourceTree = "<group>"; };
+		AB5F6B70B6935F1B8E2DD1C5 /* StvyEntityPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyEntityPhoto.h; sourceTree = "<group>"; };
+		AB5F6B73D04DCC1497C5C65A /* StvyPublicSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyPublicSDK.m; sourceTree = "<group>"; };
+		AB5F6BE336B4573ED1B03229 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB5F6C08188CB5F9D99C5E81 /* StvyEntityPublicStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyEntityPublicStore.m; sourceTree = "<group>"; };
+		AB5F6CA09D6215487CE02E80 /* StvyPublicSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StvyPublicSDKTests.m; sourceTree = "<group>"; };
+		AB5F6CBDC66ADC58A5CF423C /* StvyAPI+Collections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StvyAPI+Collections.h"; sourceTree = "<group>"; };
+		AB5F6D0C0057FB4C6667CA81 /* StorenvySDKTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StorenvySDKTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB5F6D53339119A04D55FFAC /* StvyEntityHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyEntityHelpers.h; sourceTree = "<group>"; };
+		AB5F6DAC59D8AF3C9BC49298 /* StvyAPIPublicProductsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StvyAPIPublicProductsTest.m; sourceTree = "<group>"; };
+		AB5F6F328234D8E015E5F0D2 /* StvyAPICategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyAPICategories.h; sourceTree = "<group>"; };
+		AB5F6FFBCD9AF52FFD963051 /* StvyEntityPublicStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StvyEntityPublicStore.h; sourceTree = "<group>"; };
+		BD47FAF89AB247B68AC8535D /* Pods-StorenvySDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorenvySDKTests.xcconfig"; path = "Pods/Pods-StorenvySDKTests.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		316521E618B5FB8B00127C90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				316521E718B5FB8B00127C90 /* SenTestingKit.framework in Frameworks */,
+				316521E818B5FB8B00127C90 /* SystemConfiguration.framework in Frameworks */,
+				316521E918B5FB8B00127C90 /* MobileCoreServices.framework in Frameworks */,
+				316521EA18B5FB8B00127C90 /* Foundation.framework in Frameworks */,
+				316521EB18B5FB8B00127C90 /* UIKit.framework in Frameworks */,
+				316521EC18B5FB8B00127C90 /* libStorenvySDK.a in Frameworks */,
+				316521ED18B5FB8B00127C90 /* libPods-StorenvySDKTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB5F61E1E035DBE01404B019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FE4A7118B5DFE90099D17F /* SenTestingKit.framework in Frameworks */,
+				31FE4A6E18B542C70099D17F /* SystemConfiguration.framework in Frameworks */,
+				31FE4A6D18B542BD0099D17F /* MobileCoreServices.framework in Frameworks */,
+				AB5F6DF47E8993F28F3BFFFB /* Foundation.framework in Frameworks */,
+				AB5F6D8C6D063FE2DEA41727 /* UIKit.framework in Frameworks */,
+				AB5F6C4D1A7EDD7B1B46D55F /* libStorenvySDK.a in Frameworks */,
+				3B8B803090BA421180B778D5 /* libPods-StorenvySDKTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB5F6E96AB2BD0712A27B28D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FE4A6A18B44B7F0099D17F /* CoreData.framework in Frameworks */,
+				31FE4A6818B44B770099D17F /* UIKit.framework in Frameworks */,
+				31FE4A6718B44B6C0099D17F /* CFNetwork.framework in Frameworks */,
+				31FE4A6518B44B2A0099D17F /* Security.framework in Frameworks */,
+				31FE4A6318B44B250099D17F /* SystemConfiguration.framework in Frameworks */,
+				31FE4A6118B44B1E0099D17F /* MobileCoreServices.framework in Frameworks */,
+				AB5F66B4C467BCD2F8AAF9CB /* Foundation.framework in Frameworks */,
+				7BE13B45EC4F4D538CC43E44 /* libPods-StorenvySDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB5F60674A8D52506174E78C /* StorenvySDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F6CA09D6215487CE02E80 /* StvyPublicSDKTests.m */,
+				AB5F6F1124402669AA05DE69 /* Supporting Files */,
+				AB5F6AC7A8F20B20DEEEACE5 /* API */,
+				AB5F620BB269A3C095D7AE92 /* Base */,
+			);
+			path = StorenvySDKTests;
+			sourceTree = "<group>";
+		};
+		AB5F60F3190949774F5A6EEE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F6C08188CB5F9D99C5E81 /* StvyEntityPublicStore.m */,
+				AB5F6FFBCD9AF52FFD963051 /* StvyEntityPublicStore.h */,
+				AB5F642E050CD2F60778F11F /* Helpers */,
+				AB5F68629D23238EF0095B02 /* StvyEntityPublicCollection.m */,
+				AB5F6011C6B5AE966DE55887 /* StvyEntityPublicCollection.h */,
+				AB5F66142E4707F709B0842B /* StvyEntityPublicProduct.m */,
+				AB5F680D6D319356B6463311 /* StvyEntityPublicProduct.h */,
+				AB5F6628DCDEEC734D8453FD /* StvyEntityPhoto.m */,
+				AB5F6B70B6935F1B8E2DD1C5 /* StvyEntityPhoto.h */,
+				AB5F619DA3EE7711FABF2097 /* StvyEntities.h */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		AB5F61E4B5695D20BBCA689F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F63CF6596A02E6F730C1D /* libStorenvySDK.a */,
+				AB5F6D0C0057FB4C6667CA81 /* StorenvySDKTests.octest */,
+				316521F418B5FB8B00127C90 /* StorenvySDKTests copy.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB5F6200D174745365847655 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31FE4A7018B5DFE90099D17F /* SenTestingKit.framework */,
+				31FE4A6918B44B7F0099D17F /* CoreData.framework */,
+				31FE4A6618B44B6C0099D17F /* CFNetwork.framework */,
+				31FE4A6418B44B2A0099D17F /* Security.framework */,
+				31FE4A6218B44B250099D17F /* SystemConfiguration.framework */,
+				31FE4A6018B44B1E0099D17F /* MobileCoreServices.framework */,
+				AB5F6AD9B176C52162304BBA /* Foundation.framework */,
+				AB5F65F017C10F5C0CA2EB5C /* XCTest.framework */,
+				AB5F6BE336B4573ED1B03229 /* UIKit.framework */,
+				73F35A8E348C4462AE066D46 /* libPods-StorenvySDK.a */,
+				80905420EB52426BBB379ADD /* libPods-StorenvySDKTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB5F620BB269A3C095D7AE92 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F6634665600A713A09FEA /* StvyTest.h */,
+				AB5F6830A6F08F95E68DB030 /* StvyTest.m */,
+				AB5F63FFCABC82AB7FECED5D /* StvyPublicMappingTest.h */,
+				AB5F68916DF1FF71B0414261 /* StvyPublicMappingTest.m */,
+				AB5F63066BCE78C9771AAA01 /* StvyPublicAPITest.h */,
+				AB5F64E869857E6488921126 /* StvyPublicAPITest.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AB5F627FCDEAD5C0FA24C001 /* StorenvySDK */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F6999C451ED6AFFA939D6 /* Supporting Files */,
+				AB5F65EC5C74A4689C9FF544 /* StvySDK.h */,
+				AB5F629E06369C4EC84A030E /* StvySDK.m */,
+				AB5F6AC8427B6722FAC1AC20 /* API */,
+				AB5F60F3190949774F5A6EEE /* Entities */,
+				AB5F60F13D7B72427FC711E6 /* StvyObjectManager.m */,
+				AB5F69C79848866FFDFCBF67 /* StvyObjectManager.h */,
+				AB5F6113E169A5B50874E52C /* StvyHTTPClient.m */,
+				AB5F6ABFB906DF59EB44E465 /* StvyHTTPClient.h */,
+				AB5F602A4B58DCEB39B84879 /* StvySession.m */,
+				AB5F68AE1F2F89E6E08F4EB9 /* StvySession.h */,
+				AB5F6B73D04DCC1497C5C65A /* StvyPublicSDK.m */,
+				AB5F69C35696199504424866 /* StvyPublicSDK.h */,
+				AB5F6548760923E2FFB0F908 /* StorenvySDK.h */,
+			);
+			path = StorenvySDK;
+			sourceTree = "<group>";
+		};
+		AB5F642E050CD2F60778F11F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F68C3E4BF235E12C8230B /* StvyObjectPublicCollections.m */,
+				AB5F64F61B1FB8A858CA11A7 /* StvyObjectPublicCollections.h */,
+				AB5F6B6E5201C62705DACC24 /* StvyObjectPublicProducts.m */,
+				AB5F6163442CC43EC11193AC /* StvyObjectPublicProducts.h */,
+				AB5F6D53339119A04D55FFAC /* StvyEntityHelpers.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AB5F64561B0716A9C99017DF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F69AEDB3E9880E2B315B0 /* SPDeepCopy.h */,
+				AB5F65ABD94276C7434A33C4 /* SPDeepCopy.m */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		AB5F6999C451ED6AFFA939D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F6705BF34BC20DB6C9430 /* StorenvySDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB5F69A9F8A93A7072D77145 = {
+			isa = PBXGroup;
+			children = (
+				AB5F61E4B5695D20BBCA689F /* Products */,
+				AB5F6200D174745365847655 /* Frameworks */,
+				AB5F627FCDEAD5C0FA24C001 /* StorenvySDK */,
+				AB5F60674A8D52506174E78C /* StorenvySDKTests */,
+				8CFFC65866004DA185755574 /* Pods-StorenvySDK.xcconfig */,
+				BD47FAF89AB247B68AC8535D /* Pods-StorenvySDKTests.xcconfig */,
+				AB5F64561B0716A9C99017DF /* Vendor */,
+				316521DF18B5F83D00127C90 /* StorenvySDKTests copy-Info.plist */,
+				316521F518B5FB9500127C90 /* StorenvySDKTests copy2-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		AB5F6AC7A8F20B20DEEEACE5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				316521FA18B5FC7200127C90 /* StvyAPIPublicStoreTest.m */,
+				316521FE18B6101D00127C90 /* StvyAPIPublicCollectionsTest.m */,
+				AB5F6DAC59D8AF3C9BC49298 /* StvyAPIPublicProductsTest.m */,
+				31DD95FF18B732130073F59C /* StvySDKLoadingTest.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AB5F6AC8427B6722FAC1AC20 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F667A3EF9CA8936FB7C41 /* StvyAPI.m */,
+				AB5F66A2890073C2FD5B8F6E /* StvyAPI.h */,
+				AB5F66481BED958D45E81FFC /* StvyAPIResponse.m */,
+				AB5F60A9CEAB405D68C1A60D /* StvyAPIResponse.h */,
+				AB5F6F328234D8E015E5F0D2 /* StvyAPICategories.h */,
+				AB5F6748D614553CC72FDAA8 /* StvyAPI+Store.m */,
+				AB5F69AD9D3E10225417AB51 /* StvyAPI+Store.h */,
+				AB5F65C50AAF2C2A6323EB21 /* StvyAPI+Products.m */,
+				AB5F6AE9324FCA99BF4A0892 /* StvyAPI+Products.h */,
+				AB5F65BB1CD13AA178B042A5 /* StvyAPI+Collections.m */,
+				AB5F6CBDC66ADC58A5CF423C /* StvyAPI+Collections.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AB5F6F1124402669AA05DE69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F6987BDAE1566EADB46F7 /* StorenvySDKTests-Info.plist */,
+				AB5F6EA44C09EA7B179C6EDA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		316521E018B5FB8B00127C90 /* StorenvySDKTestsXC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 316521F118B5FB8B00127C90 /* Build configuration list for PBXNativeTarget "StorenvySDKTestsXC" */;
+			buildPhases = (
+				316521E318B5FB8B00127C90 /* Check Pods Manifest.lock */,
+				316521E418B5FB8B00127C90 /* Sources */,
+				316521E618B5FB8B00127C90 /* Frameworks */,
+				316521EE18B5FB8B00127C90 /* Resources */,
+				316521F018B5FB8B00127C90 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				316521E118B5FB8B00127C90 /* PBXTargetDependency */,
+			);
+			name = StorenvySDKTestsXC;
+			productName = StorenvySDKTests;
+			productReference = 316521F418B5FB8B00127C90 /* StorenvySDKTests copy.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB5F61F1F14D05D9185D565F /* StorenvySDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB5F677F12ABDE9C2B891D86 /* Build configuration list for PBXNativeTarget "StorenvySDKTests" */;
+			buildPhases = (
+				A0794E8B0D7A45B3940EB450 /* Check Pods Manifest.lock */,
+				AB5F63B03E98743408726872 /* Sources */,
+				AB5F61E1E035DBE01404B019 /* Frameworks */,
+				AB5F6E00AD2D20795FCCAE00 /* Resources */,
+				4998909A3A1B439198176C11 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB5F65B917BF3BB216A96EA3 /* PBXTargetDependency */,
+			);
+			name = StorenvySDKTests;
+			productName = StorenvySDKTests;
+			productReference = AB5F6D0C0057FB4C6667CA81 /* StorenvySDKTests.octest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB5F67430DF638DCE624E65A /* StorenvySDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB5F63E49C5F4E55ADDDB37D /* Build configuration list for PBXNativeTarget "StorenvySDK" */;
+			buildPhases = (
+				D656ECDA80514A88B0CCAD16 /* Check Pods Manifest.lock */,
+				AB5F6D6A186972986183E28C /* Sources */,
+				AB5F6E96AB2BD0712A27B28D /* Frameworks */,
+				AB5F63B1ED803BB15AF6BAFC /* CopyFiles */,
+				43D66C129F234C4495D7FF68 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorenvySDK;
+			productName = StorenvySDK;
+			productReference = AB5F63CF6596A02E6F730C1D /* libStorenvySDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB5F648993B63FE1119335A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Storenvy;
+			};
+			buildConfigurationList = AB5F6B59DC5150036BD87D6C /* Build configuration list for PBXProject "StorenvySDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB5F69A9F8A93A7072D77145;
+			productRefGroup = AB5F61E4B5695D20BBCA689F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB5F67430DF638DCE624E65A /* StorenvySDK */,
+				AB5F61F1F14D05D9185D565F /* StorenvySDKTests */,
+				316521E018B5FB8B00127C90 /* StorenvySDKTestsXC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		316521EE18B5FB8B00127C90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				316521EF18B5FB8B00127C90 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB5F6E00AD2D20795FCCAE00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB5F66847CA4846BC9966F6B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		316521E318B5FB8B00127C90 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		316521F018B5FB8B00127C90 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-StorenvySDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43D66C129F234C4495D7FF68 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-StorenvySDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4998909A3A1B439198176C11 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-StorenvySDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0794E8B0D7A45B3940EB450 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D656ECDA80514A88B0CCAD16 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		316521E418B5FB8B00127C90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				316521F718B5FBEE00127C90 /* StvyPublicSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB5F63B03E98743408726872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				316521F918B5FC1A00127C90 /* StvyPublicAPITest.m in Sources */,
+				316521F818B5FC1500127C90 /* StvyTest.m in Sources */,
+				316521FB18B5FC7200127C90 /* StvyAPIPublicStoreTest.m in Sources */,
+				31DD960018B732130073F59C /* StvySDKLoadingTest.m in Sources */,
+				316521FF18B6101D00127C90 /* StvyAPIPublicCollectionsTest.m in Sources */,
+				AB5F6BBCAC1F225BE4EB3FDD /* StvyAPIPublicProductsTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB5F6D6A186972986183E28C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB5F6833E2A9F8EC54853139 /* StvySDK.m in Sources */,
+				AB5F6261DC1379BBC5D8AACE /* StvyAPI.m in Sources */,
+				AB5F6FDA63017EC85D0562C6 /* StvyObjectManager.m in Sources */,
+				AB5F61D1D4A16B7B1C088FD1 /* StvyHTTPClient.m in Sources */,
+				AB5F6EA712C269BDF0BF3491 /* StvySession.m in Sources */,
+				AB5F66E0BCC8B13729C2E85F /* SPDeepCopy.m in Sources */,
+				AB5F6CEE0DFE4CBD7FA62A08 /* StvyAPIResponse.m in Sources */,
+				AB5F6FB433DD209DA68E4032 /* StvyAPI+Store.m in Sources */,
+				AB5F6231E7CDBD3B53200D90 /* StvyAPI+Products.m in Sources */,
+				AB5F662B3DEF3140CB732574 /* StvyAPI+Collections.m in Sources */,
+				AB5F6AD76311870DC1D77484 /* StvyPublicSDK.m in Sources */,
+				AB5F6582E8BB70222A433A27 /* StvyEntityPublicStore.m in Sources */,
+				AB5F6198204469EA2B53A990 /* StvyObjectPublicCollections.m in Sources */,
+				AB5F6DD29B2D768CE1C76614 /* StvyEntityPublicCollection.m in Sources */,
+				AB5F6327386A802ADED8A696 /* StvyEntityPublicProduct.m in Sources */,
+				AB5F6DCD187AFD2455886090 /* StvyEntityPhoto.m in Sources */,
+				AB5F6EA07DC2178F0A542E8A /* StvyObjectPublicProducts.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		316521E118B5FB8B00127C90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB5F67430DF638DCE624E65A /* StorenvySDK */;
+			targetProxy = 316521E218B5FB8B00127C90 /* PBXContainerItemProxy */;
+		};
+		AB5F65B917BF3BB216A96EA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB5F67430DF638DCE624E65A /* StorenvySDK */;
+			targetProxy = AB5F6F89B35D828FE4443D77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB5F6EA44C09EA7B179C6EDA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB5F6833AF1AFADC6EAFC615 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		316521F218B5FB8B00127C90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD47FAF89AB247B68AC8535D /* Pods-StorenvySDKTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StorenvySDK/StorenvySDK-Prefix.pch";
+				INFOPLIST_FILE = "StorenvySDKTests copy2-Info.plist";
+				PRODUCT_NAME = "StorenvySDKTests copy";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		316521F318B5FB8B00127C90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD47FAF89AB247B68AC8535D /* Pods-StorenvySDKTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StorenvySDK/StorenvySDK-Prefix.pch";
+				INFOPLIST_FILE = "StorenvySDKTests copy2-Info.plist";
+				PRODUCT_NAME = "StorenvySDKTests copy";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AB5F641E3DE0BE40D5A8C994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD47FAF89AB247B68AC8535D /* Pods-StorenvySDKTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StorenvySDK/StorenvySDK-Prefix.pch";
+				INFOPLIST_FILE = "StorenvySDKTests/StorenvySDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		AB5F66D56E64A6A78388CCDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CFFC65866004DA185755574 /* Pods-StorenvySDK.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/StorenvySDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StorenvySDK/StorenvySDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AB5F67185139E0295FBB92DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CFFC65866004DA185755574 /* Pods-StorenvySDK.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/StorenvySDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StorenvySDK/StorenvySDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB5F6E369A37A4FE757FC889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD47FAF89AB247B68AC8535D /* Pods-StorenvySDKTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StorenvySDK/StorenvySDK-Prefix.pch";
+				INFOPLIST_FILE = "StorenvySDKTests/StorenvySDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AB5F6E5B4FC2CAD71ECD9D1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB5F6F958702AA4F7550D7E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		316521F118B5FB8B00127C90 /* Build configuration list for PBXNativeTarget "StorenvySDKTestsXC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				316521F218B5FB8B00127C90 /* Release */,
+				316521F318B5FB8B00127C90 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB5F63E49C5F4E55ADDDB37D /* Build configuration list for PBXNativeTarget "StorenvySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB5F66D56E64A6A78388CCDA /* Release */,
+				AB5F67185139E0295FBB92DC /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB5F677F12ABDE9C2B891D86 /* Build configuration list for PBXNativeTarget "StorenvySDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB5F641E3DE0BE40D5A8C994 /* Release */,
+				AB5F6E369A37A4FE757FC889 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB5F6B59DC5150036BD87D6C /* Build configuration list for PBXProject "StorenvySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB5F6E5B4FC2CAD71ECD9D1E /* Release */,
+				AB5F6F958702AA4F7550D7E2 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB5F648993B63FE1119335A0 /* Project object */;
+}

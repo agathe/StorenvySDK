@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>StorenvySDK.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>StorenvySDKTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>StorenvySDKTestsXC.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>316521C918B5F83D00127C90</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>316521E018B5FB8B00127C90</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB5F61F1F14D05D9185D565F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB5F67430DF638DCE624E65A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
