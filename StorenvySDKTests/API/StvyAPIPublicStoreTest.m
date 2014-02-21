@@ -37,6 +37,11 @@
     expect(store.name).notTo.beNil();
     NSString *storeName = @"Love Junkee";
     expect(store.name).to.equal(storeName);
+    
+    [self waitFor:self.api.loadStore result:&response];
+    [self waitFor:self.api.loadStore result:&response];
+    [self waitFor:self.api.loadStore result:&response];
+    [self waitFor:self.api.loadStore result:&response];
 }
 
 @end
