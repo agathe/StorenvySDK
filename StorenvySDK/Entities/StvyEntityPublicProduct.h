@@ -38,7 +38,7 @@
 
 @property (nonatomic, copy) NSNumber* productID;
 @property (nonatomic, copy) NSString* name;
-@property (nonatomic, copy) NSString* description;
+@property (nonatomic, copy) NSString* itemDescription;
 @property (nonatomic, copy) NSString* shortUrl;
 @property (nonatomic, copy) NSString* status;
 @property (nonatomic, copy) NSString* labels;

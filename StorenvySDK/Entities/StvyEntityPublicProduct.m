@@ -20,7 +20,7 @@
     [mapping addAttributeMappingsFromDictionary:@{
             @"id":                             @"productID",
             @"name":                           @"name",
-            @"description":                    @"description",
+            @"description":                    @"itemDescription",
             @"short_url":                      @"shortUrl",
             @"status":                         @"status",
             @"labels":                         @"labels",
